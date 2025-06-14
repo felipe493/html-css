@@ -22,6 +22,14 @@
         tbody td {
             background-color: rgb(209, 209, 209);
         }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -53,10 +61,11 @@
                     TR, TD, TH
     -->
     <table>
+        <caption>População dos Estados Brasileiro</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -170,7 +179,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td>205 520 000</td>
         </tfoot>
     </table>
